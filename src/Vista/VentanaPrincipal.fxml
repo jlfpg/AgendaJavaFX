@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="397.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaPrincipalController">
+   <children>
+      <SplitPane layoutX="-3.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="397.0" prefWidth="561.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="176.0" prefWidth="560.0">
+               <children>
+                  <TableView fx:id="Tabla" layoutX="31.0" layoutY="60.0" prefHeight="260.0" prefWidth="500.0">
+                    <columns>
+                      <TableColumn fx:id="ColName" prefWidth="146.0" text="Nombre" />
+                      <TableColumn fx:id="ColApellido" prefWidth="190.0" text="Apellidos" />
+                        <TableColumn fx:id="ColTel" prefWidth="163.0" text="Telefono" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnNew" layoutX="130.0" layoutY="343.0" mnemonicParsing="false" onAction="#nuevaVentana" text="Nuevo" />
+                  <Button fx:id="btnEdit" layoutX="256.0" layoutY="343.0" mnemonicParsing="false" onAction="#editarFila" text="Editar" />
+                  <Button fx:id="btnDelete" layoutX="383.0" layoutY="343.0" mnemonicParsing="false" onAction="#borrarFila" text="Borrar" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
